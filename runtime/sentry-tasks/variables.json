@@ -24,5 +24,6 @@
   "FILE_ACCESS_KEY": "${{Filestore.ACCESS_KEY_ID}}",
   "FILE_SECRET_KEY": "${{Filestore.SECRET_ACCESS_KEY}}",
   "TASKWORKER_CONCURRENCY": "1",
-  "PORT": "8080"
+  "PORT": "8080",
+  "RAILWAY_DOCKERFILE_PATH": "sentry-tasks/Dockerfile"
 }

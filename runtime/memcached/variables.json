@@ -1,1 +1,3 @@
-{}
+{
+  "RAILWAY_DOCKERFILE_PATH": "memcached/Dockerfile"
+}

@@ -10,5 +10,6 @@
   "SENTRY_EVENT_RETENTION_DAYS": "${{web.SENTRY_EVENT_RETENTION_DAYS}}",
   "SNUBA_API_URL": "http://${{snuba-api.RAILWAY_PRIVATE_DOMAIN}}:1218",
   "SNUBA_API_WORKERS": "1",
-  "PORT": "8080"
+  "PORT": "8080",
+  "RAILWAY_DOCKERFILE_PATH": "snuba-consumers/Dockerfile"
 }

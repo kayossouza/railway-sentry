@@ -1,3 +1,4 @@
 {
-  "REDIS_PASSWORD": "${{secret(32)}}"
+  "REDIS_PASSWORD": "${{secret(32)}}",
+  "RAILWAY_DOCKERFILE_PATH": "valkey/Dockerfile"
 }

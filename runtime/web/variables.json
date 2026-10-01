@@ -25,6 +25,7 @@
   "FILE_SECRET_KEY": "${{Filestore.SECRET_ACCESS_KEY}}",
   "PORT": "9000",
   "WEB_WORKERS": "1",
-  "ADMIN_EMAIL": "admin@example.com",
-  "ADMIN_PASSWORD": "${{secret(32)}}"
+  "ADMIN_EMAIL": "admin@sentry.local",
+  "ADMIN_PASSWORD": "${{secret(32)}}",
+  "RAILWAY_DOCKERFILE_PATH": "web/Dockerfile"
 }
