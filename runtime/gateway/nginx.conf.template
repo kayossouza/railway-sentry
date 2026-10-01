@@ -4,11 +4,9 @@ map $host $trusted_proto {
     default https;
     ${PRIVATE_HOST} http;
 }
-map "$server_port:${PUBLIC_INGESTION}" $ingestion_allowed {
+map $server_port $ingestion_allowed {
     default 0;
-    "8081:false" 1;
-    "8081:true" 1;
-    "8080:true" 1;
+    8081 1;
 }
 server {
     listen 8080;

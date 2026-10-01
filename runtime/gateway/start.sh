@@ -1,6 +1,5 @@
 #!/bin/sh
 set -eu
-export PUBLIC_INGESTION="${PUBLIC_INGESTION:-false}"
 export WEB_HOST="${WEB_HOST:-web.railway.internal}"
 export PRIVATE_HOST="${PRIVATE_HOST:-gateway.railway.internal}"
 export DNS_RESOLVER="$(awk '/^nameserver/{print $2; exit}' /etc/resolv.conf)"
