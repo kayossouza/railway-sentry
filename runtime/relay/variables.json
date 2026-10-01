@@ -8,5 +8,6 @@
   "NODE_SECRET_KEY": "${{Nodestore.SECRET_ACCESS_KEY}}",
   "PORT": "3000",
   "REDIS_URL": "redis://:${{valkey.REDIS_PASSWORD}}@${{valkey.RAILWAY_PRIVATE_DOMAIN}}:6379",
-  "RAILWAY_DOCKERFILE_PATH": "relay/Dockerfile"
+  "RAILWAY_DOCKERFILE_PATH": "relay/Dockerfile",
+  "RELAY_KEY_SEED": "${{secret(64, \"abcdef0123456789\")}}"
 }

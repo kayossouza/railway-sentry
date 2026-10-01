@@ -75,3 +75,6 @@ for feature in ('organizations:transaction-metrics-extraction',
                 'projects:span-metrics-extraction', 'projects:span-metrics-extraction-addons',
                 'organizations:metric-alerts', 'organizations:incidents'):
     SENTRY_FEATURES[feature] = False
+
+# Required for a new administrator to create their first organization in the UI.
+SENTRY_FEATURES['organizations:create'] = True

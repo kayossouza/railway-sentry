@@ -20,6 +20,7 @@ server {
     set $relay http://${RELAY_HOST}:3000;
     proxy_http_version 1.1;
     proxy_set_header Connection '';
+    proxy_set_header Accept-Encoding '';
     proxy_set_header Host $host;
     proxy_set_header X-Forwarded-For $remote_addr;
     proxy_set_header X-Forwarded-Proto $trusted_proto;
@@ -50,7 +51,6 @@ server {
         return 501 'Feedback is unsupported in this worker profile.\n';
     }
     location / {
-        proxy_set_header Accept-Encoding '';
         sub_filter_once on;
         sub_filter '</head>' '<style>a[href*="/issues/feedback/"]{display:none!important}</style></head>';
         proxy_pass $web;

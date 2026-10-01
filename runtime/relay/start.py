@@ -1,9 +1,9 @@
 import json
 import os
 import pathlib
-import subprocess
 import urllib.parse
 from storage import client
+from relay_identity import identity as derive_identity
 from wait import web_url, wait
 
 root = pathlib.Path('/work/.relay')
@@ -19,8 +19,7 @@ config = {
 }
 (root / 'config.yml').write_text(json.dumps(config))
 credentials = root / 'credentials.json'
-if not credentials.exists():
-    subprocess.run(['/bin/relay', '--config', str(root), 'credentials', 'generate'], check=True)
+credentials.write_text(json.dumps(derive_identity(os.environ['RELAY_KEY_SEED'])))
 identity = json.loads(credentials.read_text())
 os.chmod(credentials, 0o600)
 client().put_object(Bucket=os.environ['NODE_BUCKET'], Key='relay/public.json',
