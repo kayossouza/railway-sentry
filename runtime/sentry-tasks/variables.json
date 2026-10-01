@@ -27,5 +27,6 @@
   "PORT": "8080",
   "RAILWAY_DOCKERFILE_PATH": "sentry-tasks/Dockerfile",
   "RAILWAY_HEALTHCHECK_TIMEOUT_SEC": "900",
-  "INGESTION_URL": "${{web.INGESTION_URL}}"
+  "INGESTION_URL": "${{web.INGESTION_URL}}",
+  "ADMIN_EMAIL": "${{web.ADMIN_EMAIL}}"
 }
