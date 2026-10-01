@@ -1,0 +1,5 @@
+{
+  "TASKBROKER_KAFKA_CLUSTERS__DEFAULT__ADDRESS": "${{kafka.RAILWAY_PRIVATE_DOMAIN}}:9092",
+  "TASKBROKER_DB_PATH": "/opt/sqlite/taskbroker-activations.sqlite",
+  "RAILWAY_RUN_UID": "0"
+}

@@ -1,0 +1,3 @@
+# Runtime secrets and endpoints are applied in sentry.conf.py.
+system.admin-email: ''
+symbolicator.enabled: true

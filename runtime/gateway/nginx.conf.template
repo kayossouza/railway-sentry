@@ -1,0 +1,58 @@
+# Only this service receives a public domain. Resolve private hosts after redeploy.
+resolver ${DNS_RESOLVER} valid=10s;
+map $host $trusted_proto {
+    default https;
+    ${PRIVATE_HOST} http;
+}
+map "$server_port:${PUBLIC_INGESTION}" $ingestion_allowed {
+    default 0;
+    "8081:false" 1;
+    "8081:true" 1;
+    "8080:true" 1;
+}
+server {
+    listen 8080;
+    listen [::]:8080;
+    listen 8081;
+    listen [::]:8081;
+    client_max_body_size 100m;
+    set $web http://${WEB_HOST}:9000;
+    set $relay http://${RELAY_HOST}:3000;
+    proxy_http_version 1.1;
+    proxy_set_header Connection '';
+    proxy_set_header Host $host;
+    proxy_set_header X-Forwarded-For $remote_addr;
+    proxy_set_header X-Forwarded-Proto $trusted_proto;
+    proxy_set_header X-Request-Id $request_id;
+    proxy_read_timeout 90s;
+    location = /ready {
+        auth_request /relay-ready;
+        proxy_pass $web/_health/;
+    }
+    location = /relay-ready {
+        internal;
+        proxy_pass $relay/api/relay/healthcheck/ready/;
+        proxy_pass_request_body off;
+        proxy_set_header Content-Length '';
+    }
+    location /api/store/ { if ($ingestion_allowed = 0) { return 403; } proxy_pass $relay; }
+    location ~ ^/api/[1-9]\d*/ { if ($ingestion_allowed = 0) { return 403; } proxy_pass $relay; }
+    location ^~ /api/0/relays/ { proxy_pass $relay; }
+    location /_assets/ {
+        rewrite ^/_assets/(.*)$ /_static/dist/sentry/$1 break;
+        proxy_pass $web;
+        proxy_hide_header Content-Disposition;
+    }
+    # The pinned new issue navigation ignores the legacy Feedback UI feature flag.
+    # Hide that unsupported entry and reject direct page navigation explicitly.
+    location ~ ^/organizations/[^/]+/issues/feedback/? {
+        default_type text/plain;
+        return 501 'Feedback is unsupported in this worker profile.\n';
+    }
+    location / {
+        proxy_set_header Accept-Encoding '';
+        sub_filter_once on;
+        sub_filter '</head>' '<style>a[href*="/issues/feedback/"]{display:none!important}</style></head>';
+        proxy_pass $web;
+    }
+}

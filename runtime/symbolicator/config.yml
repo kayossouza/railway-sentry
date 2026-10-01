@@ -1,0 +1,6 @@
+# Adapted from self-hosted 26.9.0: no StatsD service in this installation.
+cache_dir: /data
+bind: "[::]:3021"
+logging:
+  level: warn
+sentry_dsn: null
