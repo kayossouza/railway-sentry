@@ -1,5 +1,6 @@
 """Derive Relay's documented key format from a Railway-generated 32-byte seed."""
 import base64
+import hashlib
 import re
 import uuid
 from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PrivateKey
@@ -12,4 +13,4 @@ def identity(seed):
     public = Ed25519PrivateKey.from_private_bytes(secret).public_key().public_bytes_raw()
     encode = lambda value: base64.urlsafe_b64encode(value).decode().rstrip('=')
     return {'secret_key': encode(secret), 'public_key': encode(public),
-            'id': str(uuid.uuid5(uuid.NAMESPACE_OID, encode(public)))}
+            'id': str(uuid.UUID(bytes=hashlib.sha256(public).digest()[:16], version=4))}

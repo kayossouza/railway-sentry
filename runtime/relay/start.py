@@ -25,5 +25,6 @@ os.chmod(credentials, 0o600)
 client().put_object(Bucket=os.environ['NODE_BUCKET'], Key='relay/public.json',
                     Body=json.dumps({'public_key': identity['public_key'], 'id': identity['id']}).encode())
 redis = urllib.parse.urlsplit(os.environ['REDIS_URL'])
-wait([os.environ['KAFKA_BROKERS'], redis.hostname + ':' + str(redis.port or 6379)])
+wait([os.environ['KAFKA_BROKERS'], redis.hostname + ':' + str(redis.port or 6379),
+      web_url() + '/_health/'])
 os.execv('/bin/relay', ['/bin/relay', '--config', str(root), 'run'])

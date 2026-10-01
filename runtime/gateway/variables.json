@@ -7,5 +7,6 @@
   "SNUBA_CONSUMERS_HOST": "${{snuba-consumers.RAILWAY_PRIVATE_DOMAIN}}",
   "TASKS_HOST": "${{sentry-tasks.RAILWAY_PRIVATE_DOMAIN}}",
   "PUBLIC_INGESTION": "false",
-  "RAILWAY_DOCKERFILE_PATH": "gateway/Dockerfile"
+  "RAILWAY_DOCKERFILE_PATH": "gateway/Dockerfile",
+  "RAILWAY_HEALTHCHECK_TIMEOUT_SEC": "900"
 }
