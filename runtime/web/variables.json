@@ -28,5 +28,6 @@
   "ADMIN_EMAIL": "admin@sentry.local",
   "ADMIN_PASSWORD": "${{secret(32)}}",
   "RAILWAY_DOCKERFILE_PATH": "web/Dockerfile",
-  "RAILWAY_HEALTHCHECK_TIMEOUT_SEC": "900"
+  "RAILWAY_HEALTHCHECK_TIMEOUT_SEC": "900",
+  "INGESTION_URL": "http://${{gateway.RAILWAY_PRIVATE_DOMAIN}}:8081"
 }

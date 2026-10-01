@@ -24,5 +24,6 @@
   "FILE_ACCESS_KEY": "${{Filestore.ACCESS_KEY_ID}}",
   "FILE_SECRET_KEY": "${{Filestore.SECRET_ACCESS_KEY}}",
   "PORT": "8080",
-  "RAILWAY_DOCKERFILE_PATH": "sentry-consumers/Dockerfile"
+  "RAILWAY_DOCKERFILE_PATH": "sentry-consumers/Dockerfile",
+  "INGESTION_URL": "${{web.INGESTION_URL}}"
 }

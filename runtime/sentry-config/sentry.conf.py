@@ -77,4 +77,8 @@ for feature in ('organizations:transaction-metrics-extraction',
     SENTRY_FEATURES[feature] = False
 
 # Required for a new administrator to create their first organization in the UI.
+# Upstream initializer forcibly disables this feature in single-organization mode.
+SENTRY_SINGLE_ORGANIZATION = False
 SENTRY_FEATURES['organizations:create'] = True
+# Both displayed DSNs and Sentry's own SDK use the private ingestion listener.
+SENTRY_ENDPOINT = os.environ['INGESTION_URL']
