@@ -1,5 +1,7 @@
 [![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/self-hosted-sentry-errors-logs-and-trace?utm_source=github-readme&utm_medium=referral&utm_campaign=sentry-launch)
 
+[Documentation](https://railway-sentry-docs.vercel.app) · [Source](https://github.com/kayossouza/railway-sentry)
+
 # Deploy and Host Self-Hosted Sentry: Errors, Logs and Traces
 
 Sentry 26.9.0 for errors, structured logs and linked traces from your applications
