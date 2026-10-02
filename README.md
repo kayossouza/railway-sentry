@@ -1,4 +1,4 @@
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/XOojoD?utm_source=github-readme&utm_medium=referral&utm_campaign=sentry-launch)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/self-hosted-sentry-errors-logs-and-trace?utm_source=github-readme&utm_medium=referral&utm_campaign=sentry-launch)
 
 # Deploy and Host Self-Hosted Sentry: Errors, Logs and Traces
 
