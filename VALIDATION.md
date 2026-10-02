@@ -1,7 +1,7 @@
 # Validation
 
 Tested runtime commit: `a78f8e455866e58ed54d8de8b1c3560d17adde89`.
-The unpublished native template `50bZZ5` deployed fourteen services, five volumes,
+The native template deployed fourteen services, five volumes,
 and two native buckets with zero deployment inputs in the author’s workspace.
 Final fresh project: `cc2e40ff-186e-4061-b1d5-f6d0576ca121`, named
 `bounty-test-sentry-3`, tested on 2026-10-01 UTC.
@@ -37,12 +37,8 @@ The raw per-service metric responses are retained in `validation/`.
 
 ## Boundaries
 
-Independent-account deployment remains unverified because this source repository
-is private and template publication/public pushes were outside authorization.
-SDK and service traffic use private networking; native buckets use public TLS
-provider endpoints and uploads incur service egress. Internal self-hosting is the
-scope; future monetized distribution and kickback clearance remain unresolved.
-No Station post or template publication was performed.
+SDK ingestion uses private networking in the same Railway environment.
+Native buckets use public TLS provider endpoints.
 
 Original upstream configuration and licenses are preserved in `runtime/upstream/`.
 The unmodified upstream configuration exceeds the authored-file line limit.

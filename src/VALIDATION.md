@@ -8,7 +8,7 @@ retention, mail transport and teardown: [EVIDENCE.md](../EVIDENCE.md) and
 [executed checklist](../fix-evidence/VALIDATION.md). Native registry inputs remain
 unresolved. The results below belong to the earlier revision.
 
-# Validation results — 2026-10-01
+# Validation results , 2026-10-01
 
 The named error, structured-log and trace pipelines worked on Railway. Tests
 used only `bounty-test-sentry-1` through `bounty-test-sentry-4`. No Station post,

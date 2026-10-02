@@ -61,10 +61,10 @@ or invented cost is imposed here.
 
 ## Regions, scope and licensing
 
-The native personal template uses Railway's default service region and two
+The native template uses Railway's default service region and two
 buckets fixed in AMS; the final test used EU West/AMS. The development IaC
 regions.json is not a deployment input for template users. Native S3 uses public TLS; uploads incur
 service egress. Never apply a region change as an in-place storage migration.
 Feedback UI is disabled because its ingest worker is absent. Upstream licenses
-remain preserved. Internal self-hosting is the documented scope; authoritative
-licensing guidance remains required before future monetized distribution.
+remain preserved. Use this template to monitor your own applications. Do not offer Sentry as a
+hosted service to third parties.

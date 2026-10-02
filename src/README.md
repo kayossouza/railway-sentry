@@ -9,5 +9,4 @@ No source-side CLI deployment or secret generation is needed.
 [Upstream notices](upstream/LICENSE.md) identify preserved third-party sources.
 
 The `.railway` adapters and SDK fixture are development/validation tools;
-`runtime/` is the isolated production Docker build context. See the main evidence
-and handoff for tested scope and remaining distribution limitations.
+`runtime/` is the isolated production Docker build context. See the [validation record](../VALIDATION.md) for tested scope.

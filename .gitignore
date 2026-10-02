@@ -1,3 +1,10 @@
+node_modules/
 __pycache__/
 *.pyc
-.railway/
+*.log
+.env
+.env.*
+evidence/
+evidence-parts/
+logs/
+prompts/

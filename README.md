@@ -1,19 +1,18 @@
-# Sentry on Railway
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/XOojoD?utm_source=github-readme&utm_medium=referral&utm_campaign=sentry-launch)
 
-Self-hosted Sentry 26.9.0 for errors, structured logs and linked traces from
-applications in the same Railway environment. Community package, unaffiliated
-with Sentry or Railway. Intended for internal use.
+# Self-Hosted Sentry: Errors, Logs and Traces
+
+Sentry 26.9.0 for errors, structured logs and linked traces from your applications
+in the same Railway environment. Fair Source (FSL-1.1-Apache-2.0).
+Unofficial community template, not affiliated with or endorsed by Sentry.
 
 ## One-click deploy
 
-[Deploy the personal template](https://railway.com/deploy/50bZZ5).
 Use an existing Hobby or Pro workspace; Free/Trial RAM limits cannot run this stack.
 Choose your workspace (or an empty existing project) and deploy. Leave every
 variable at its default.
 Wait for **gateway** to become healthy, then open its public URL.
 No CLI, registry login, migration command or secret generator is needed.
-The template is unpublished and its source repository is private;
-access outside the author's account has not been tested.
 Fresh deployment, telemetry, persistence and all service restarts passed in the
 author's workspace. [Test record](VALIDATION.md).
 
@@ -107,3 +106,11 @@ individual image to `latest`. Redeploy the services and verify an existing
 error, log and trace plus a new sample. On failure, restore the matching
 backups and compatible release: schema downgrades are not automatic.
 [Recovery](RECOVERY.md) · [Licenses](runtime/upstream/LICENSE.md) · [Evidence](VALIDATION.md).
+
+## License and intended use
+
+Sentry is Fair Source (FSL-1.1-Apache-2.0). Copyright Functional Software, Inc. dba Sentry.
+Use this template for monitoring your own applications, not for offering Sentry
+as a hosted service to third parties. See [Sentry licensing](https://open.sentry.io/licensing/)
+and the [upstream LICENSE.md](https://github.com/getsentry/sentry/blob/26.9.0/LICENSE.md).
+The runtime uses official unmodified images and preserves upstream licenses.
