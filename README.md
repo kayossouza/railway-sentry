@@ -1,6 +1,6 @@
 [![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/XOojoD?utm_source=github-readme&utm_medium=referral&utm_campaign=sentry-launch)
 
-# Self-Hosted Sentry: Errors, Logs and Traces
+# Deploy and Host Self-Hosted Sentry: Errors, Logs and Traces
 
 Sentry 26.9.0 for errors, structured logs and linked traces from your applications
 in the same Railway environment. Fair Source (FSL-1.1-Apache-2.0).
@@ -16,7 +16,7 @@ No CLI, registry login, migration command or secret generator is needed.
 Fresh deployment, telemetry, persistence and all service restarts passed in the
 author's workspace. [Test record](VALIDATION.md).
 
-## What you get
+## About Hosting Sentry
 
 Sentry UI, private ingestion, automatic bootstrap, per-install passwords,
 persistent databases and separate object-storage buckets. Errors appear in
@@ -29,6 +29,23 @@ This profile excludes replay, profiling, feedback, uptime, cron monitoring,
 AI features and legacy metrics. It is single-node. Indexed retention is seven
 days; Kafka queue age is three hours, so a prolonged outage can lose queued data.
 Email is disabled by default; optional SMTP setup is in [operations](OPERATIONS.md).
+
+## Why Deploy Sentry on Railway
+
+Keep application errors, logs and linked traces in your own Railway workspace.
+The template handles bootstrap, networking and generated credentials.
+
+## Common Use Cases
+
+- Investigate errors in your own applications.
+- Connect structured logs to application traces.
+- Monitor services sharing a Railway environment.
+
+## Dependencies for Sentry
+
+The template provisions all fourteen services, five persistent volumes and two
+object-storage buckets. You need a Railway Hobby or Pro workspace and an
+application using a Sentry SDK in the same environment.
 
 ## First login
 
