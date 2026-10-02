@@ -1,0 +1,8 @@
+{
+  "CLICKHOUSE_PASSWORD": "${{secret(32)}}",
+  "CLICKHOUSE_USER": "default",
+  "CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT": "1",
+  "MAX_MEMORY_USAGE_RATIO": "0.3",
+  "PORT": "8123",
+  "RAILWAY_DOCKERFILE_PATH": "clickhouse/Dockerfile"
+}

@@ -1,0 +1,4 @@
+{
+  "PORT": "3021",
+  "RAILWAY_DOCKERFILE_PATH": "symbolicator/Dockerfile"
+}

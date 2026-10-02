@@ -1,0 +1,7 @@
+{
+  "POSTGRES_PASSWORD": "${{secret(32)}}",
+  "POSTGRES_DB": "postgres",
+  "POSTGRES_USER": "postgres",
+  "PGDATA": "/var/lib/postgresql/data/pgdata",
+  "RAILWAY_DOCKERFILE_PATH": "postgres/Dockerfile"
+}

@@ -1,0 +1,14 @@
+{
+  "altinity/clickhouse-server:25.8.28.10001.altinitystable": "sha256:5ad76ea89ca881043b76ddcf2bcf3813663060a03a04b39f5c8ad2ef1dea4b07",
+  "confluentinc/cp-kafka:7.6.13": "sha256:997e05f8551c64d1e643baf269237e3bb13808e5909d2b936e8e986226bfc78a",
+  "ghcr.io/getsentry/relay:26.9.0": "sha256:5e159890e7d01c60a4e2f8bca0d581136a68b8acd509325dc39c333928fd05bb",
+  "ghcr.io/getsentry/sentry:26.9.0": "sha256:7621804a7e234eee6150c9fe255f781e178640605e389235ab6c2490b8afe68b",
+  "ghcr.io/getsentry/snuba:26.9.0": "sha256:72c5420ee02f2626e39c65e27c1f7e38f20d59a291112905715753bc442fc155",
+  "ghcr.io/getsentry/symbolicator:26.9.0": "sha256:f38cf17e84e1d6ae0571f326684fdc5f4e7d27fa6bc6c847f687fc51ea8beebc",
+  "ghcr.io/getsentry/taskbroker:26.9.0": "sha256:d20c5883f7d072bdcb0d0f040307b6472d7a9611e0ed3ddfc27c5e1f64b8f9d7",
+  "memcached:1.6.45-alpine": "sha256:9e4de012dc607573052061c0bcb38abc775e1dd59b24e7ac38d1892842094aaf",
+  "nginx:1.31.5-alpine": "sha256:72ba65eb42c10344912a84ff42408db7d34f2feb642204570ab8fc5ffd29f1d3",
+  "postgres:14.24-trixie": "sha256:c2427de38f998489d36de7ca3553db2134872c400f2b08be4b824e5c50e4d619",
+  "python:3.13.7-slim-trixie": "sha256:5f55cdf0c5d9dc1a415637a5ccc4a9e18663ad203673173b8cda8f8dcacef689",
+  "valkey/valkey:8.1.10-alpine": "sha256:081c2f5cb575efc901aa80ff9cdbd1ec6a301682fd35e1ebb4b0990a4a4a8507"
+}

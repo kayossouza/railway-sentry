@@ -1,0 +1,8 @@
+{
+  "build": {
+    "dockerfilePath": "sdk/Dockerfile"
+  },
+  "deploy": {
+    "restartPolicyType": "NEVER"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "web": {
+    "config": "web/railway.json",
+    "volume": null
+  },
+  "sentry-consumers": {
+    "config": "sentry-consumers/railway.json",
+    "volume": null
+  },
+  "sentry-tasks": {
+    "config": "sentry-tasks/railway.json",
+    "volume": null
+  },
+  "snuba-api": {
+    "config": "snuba-api/railway.json",
+    "volume": null
+  },
+  "snuba-consumers": {
+    "config": "snuba-consumers/railway.json",
+    "volume": null
+  },
+  "relay": {
+    "config": "relay/railway.json",
+    "volume": null
+  },
+  "postgres": {
+    "config": "postgres/railway.json",
+    "volume": "/var/lib/postgresql/data"
+  },
+  "valkey": {
+    "config": "valkey/railway.json",
+    "volume": "/data"
+  },
+  "clickhouse": {
+    "config": "clickhouse/railway.json",
+    "volume": "/var/lib/clickhouse"
+  },
+  "memcached": {
+    "config": "memcached/railway.json",
+    "volume": null
+  },
+  "symbolicator": {
+    "config": "symbolicator/railway.json",
+    "volume": null
+  },
+  "taskbroker": {
+    "config": "taskbroker/railway.json",
+    "volume": "/opt/sqlite"
+  },
+  "gateway": {
+    "config": "gateway/railway.json",
+    "volume": null
+  },
+  "kafka": {
+    "config": "kafka/railway.json",
+    "volume": "/var/lib/kafka/data"
+  }
+}

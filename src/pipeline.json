@@ -1,0 +1,21 @@
+{
+  "sentry": [
+    "events-consumer",
+    "attachments-consumer",
+    "post-process-forwarder-errors",
+    "transactions-consumer",
+    "process-spans",
+    "post-process-forwarder-transactions"
+  ],
+  "snuba": [
+    "snuba-errors-consumer",
+    "snuba-outcomes-consumer",
+    "snuba-outcomes-accepted-consumer",
+    "snuba-outcomes-billing-consumer",
+    "snuba-group-attributes-consumer",
+    "snuba-replacer",
+    "snuba-transactions-consumer",
+    "snuba-eap-items-consumer"
+  ],
+  "source_sha": "667094ad0b11bb27e6380fc757754c66516b59b4"
+}
