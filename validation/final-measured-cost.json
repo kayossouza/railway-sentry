@@ -1,0 +1,150 @@
+{
+  "window": {
+    "since": "2026-10-01T23:49:50.131926+00:00",
+    "until": "2026-10-01T23:53:19.548163+00:00"
+  },
+  "services": [
+    {
+      "service": "clickhouse",
+      "mean_ram_GB": 1.2074469668571428,
+      "mean_cpu_vCPU": 0.0319721619047619,
+      "memory_samples": 7,
+      "cpu_samples": 7,
+      "first": "2026-10-01T23:50:00+00:00",
+      "last": "2026-10-01T23:53:00+00:00"
+    },
+    {
+      "service": "gateway",
+      "mean_ram_GB": 0.04122448457142857,
+      "mean_cpu_vCPU": 0.00022292857142857143,
+      "memory_samples": 7,
+      "cpu_samples": 7,
+      "first": "2026-10-01T23:50:00+00:00",
+      "last": "2026-10-01T23:53:00+00:00"
+    },
+    {
+      "service": "kafka",
+      "mean_ram_GB": 0.5765172662857143,
+      "mean_cpu_vCPU": 0.029591009523809525,
+      "memory_samples": 7,
+      "cpu_samples": 7,
+      "first": "2026-10-01T23:50:00+00:00",
+      "last": "2026-10-01T23:53:00+00:00"
+    },
+    {
+      "service": "memcached",
+      "mean_ram_GB": 0.014159286857142857,
+      "mean_cpu_vCPU": 0.0004987095238095238,
+      "memory_samples": 7,
+      "cpu_samples": 7,
+      "first": "2026-10-01T23:50:00+00:00",
+      "last": "2026-10-01T23:53:00+00:00"
+    },
+    {
+      "service": "postgres",
+      "mean_ram_GB": 0.09299090285714286,
+      "mean_cpu_vCPU": 0.0007280523809523809,
+      "memory_samples": 7,
+      "cpu_samples": 7,
+      "first": "2026-10-01T23:50:00+00:00",
+      "last": "2026-10-01T23:53:00+00:00"
+    },
+    {
+      "service": "relay",
+      "mean_ram_GB": 0.18763483428571429,
+      "mean_cpu_vCPU": 0.01389765238095238,
+      "memory_samples": 7,
+      "cpu_samples": 7,
+      "first": "2026-10-01T23:50:00+00:00",
+      "last": "2026-10-01T23:53:00+00:00"
+    },
+    {
+      "service": "sentry-consumers",
+      "mean_ram_GB": 3.225526857142857,
+      "mean_cpu_vCPU": 0.019603890476190475,
+      "memory_samples": 7,
+      "cpu_samples": 7,
+      "first": "2026-10-01T23:50:00+00:00",
+      "last": "2026-10-01T23:53:00+00:00"
+    },
+    {
+      "service": "sentry-tasks",
+      "mean_ram_GB": 0.8180396617142858,
+      "mean_cpu_vCPU": 0.02411832380952381,
+      "memory_samples": 7,
+      "cpu_samples": 7,
+      "first": "2026-10-01T23:50:00+00:00",
+      "last": "2026-10-01T23:53:00+00:00"
+    },
+    {
+      "service": "snuba-api",
+      "mean_ram_GB": 0.43797533257142857,
+      "mean_cpu_vCPU": 0.0,
+      "memory_samples": 7,
+      "cpu_samples": 7,
+      "first": "2026-10-01T23:50:00+00:00",
+      "last": "2026-10-01T23:53:00+00:00"
+    },
+    {
+      "service": "snuba-consumers",
+      "mean_ram_GB": 1.6592896,
+      "mean_cpu_vCPU": 0.03239681428571429,
+      "memory_samples": 7,
+      "cpu_samples": 7,
+      "first": "2026-10-01T23:50:00+00:00",
+      "last": "2026-10-01T23:53:00+00:00"
+    },
+    {
+      "service": "symbolicator",
+      "mean_ram_GB": 0.470188032,
+      "mean_cpu_vCPU": 2.361904761904762e-05,
+      "memory_samples": 7,
+      "cpu_samples": 7,
+      "first": "2026-10-01T23:50:00+00:00",
+      "last": "2026-10-01T23:53:00+00:00"
+    },
+    {
+      "service": "taskbroker",
+      "mean_ram_GB": 0.024951661714285714,
+      "mean_cpu_vCPU": 0.012052157142857144,
+      "memory_samples": 7,
+      "cpu_samples": 7,
+      "first": "2026-10-01T23:50:00+00:00",
+      "last": "2026-10-01T23:53:00+00:00"
+    },
+    {
+      "service": "valkey",
+      "mean_ram_GB": 0.016663113142857143,
+      "mean_cpu_vCPU": 0.0024577095238095237,
+      "memory_samples": 7,
+      "cpu_samples": 7,
+      "first": "2026-10-01T23:50:00+00:00",
+      "last": "2026-10-01T23:53:00+00:00"
+    },
+    {
+      "service": "web",
+      "mean_ram_GB": 0.5400470674285714,
+      "mean_cpu_vCPU": 0.002637266666666667,
+      "memory_samples": 7,
+      "cpu_samples": 7,
+      "first": "2026-10-01T23:50:00+00:00",
+      "last": "2026-10-01T23:53:00+00:00"
+    }
+  ],
+  "service_count": 14,
+  "sample_app_excluded": true,
+  "mean_ram_GB": 9.31265506742857,
+  "mean_cpu_vCPU": 0.17020029523809524,
+  "30_day_repeating_compute_USD": 96.33712567411749,
+  "method": "Sum arithmetic means of equally spaced provider points with timestamps inside the requested quiet window for 14 runtime services, excluding the provider pre-window boundary bucket; repeated 43200 minutes. This is a scenario, not an invoice or capacity forecast.",
+  "container_rates_source": "https://docs.railway.com/pricing/plans",
+  "provider_project_usage_USD_as_of_capture": 0.10166570873358699,
+  "provider_usage_scope": "Cumulative actual project usage including bootstrap/recovery/sample application; reporting can lag; billing period in raw response.",
+  "compute_scenario_excludes": [
+    "volume storage",
+    "bucket storage",
+    "service egress",
+    "workload growth",
+    "plan charges and included credit"
+  ]
+}

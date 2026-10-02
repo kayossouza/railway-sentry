@@ -1,0 +1,114 @@
+[
+  {
+    "service": "web",
+    "recovery": true,
+    "original_data_persisted": true,
+    "fresh_error_log_linked_trace": true,
+    "receipt": "run8-restart-web-fresh-receipts.json",
+    "issue_count": "3"
+  },
+  {
+    "service": "sentry-consumers",
+    "recovery": true,
+    "original_data_persisted": true,
+    "fresh_error_log_linked_trace": true,
+    "receipt": "run8-restart-sentry-consumers-fresh-receipts.json",
+    "issue_count": "4"
+  },
+  {
+    "service": "sentry-tasks",
+    "recovery": true,
+    "original_data_persisted": true,
+    "fresh_error_log_linked_trace": true,
+    "receipt": "run8-restart-sentry-tasks-fresh-receipts.json",
+    "issue_count": "5"
+  },
+  {
+    "service": "snuba-api",
+    "recovery": true,
+    "original_data_persisted": true,
+    "fresh_error_log_linked_trace": true,
+    "receipt": "run8-restart-snuba-api-fresh-receipts.json",
+    "issue_count": "6"
+  },
+  {
+    "service": "snuba-consumers",
+    "recovery": true,
+    "original_data_persisted": true,
+    "fresh_error_log_linked_trace": true,
+    "receipt": "run8-restart-snuba-consumers-fresh-receipts.json",
+    "issue_count": "7"
+  },
+  {
+    "service": "relay",
+    "recovery": true,
+    "original_data_persisted": true,
+    "fresh_error_log_linked_trace": true,
+    "receipt": "run8-restart-relay-fresh-receipts.json",
+    "issue_count": "8"
+  },
+  {
+    "service": "postgres",
+    "recovery": true,
+    "original_data_persisted": true,
+    "fresh_error_log_linked_trace": true,
+    "receipt": "run8-restart-postgres-fresh-receipts.json",
+    "issue_count": "9"
+  },
+  {
+    "service": "valkey",
+    "recovery": true,
+    "original_data_persisted": true,
+    "fresh_error_log_linked_trace": true,
+    "receipt": "run8-restart-valkey-fresh-receipts.json",
+    "issue_count": "10"
+  },
+  {
+    "service": "clickhouse",
+    "recovery": true,
+    "original_data_persisted": true,
+    "fresh_error_log_linked_trace": true,
+    "receipt": "run8-restart-clickhouse-fresh-receipts.json",
+    "issue_count": "11"
+  },
+  {
+    "service": "memcached",
+    "recovery": true,
+    "original_data_persisted": true,
+    "fresh_error_log_linked_trace": true,
+    "receipt": "run8-restart-memcached-fresh-receipts.json",
+    "issue_count": "12"
+  },
+  {
+    "service": "symbolicator",
+    "recovery": true,
+    "original_data_persisted": true,
+    "fresh_error_log_linked_trace": true,
+    "receipt": "run8-restart-symbolicator-fresh-receipts.json",
+    "issue_count": "13"
+  },
+  {
+    "service": "taskbroker",
+    "recovery": true,
+    "original_data_persisted": true,
+    "fresh_error_log_linked_trace": true,
+    "receipt": "run8-restart-taskbroker-fresh-receipts.json",
+    "issue_count": "14"
+  },
+  {
+    "service": "gateway",
+    "recovery": true,
+    "original_data_persisted": true,
+    "fresh_error_log_linked_trace": true,
+    "receipt": "run8-restart-gateway-fresh-receipts.json",
+    "issue_count": "15"
+  },
+  {
+    "service": "kafka",
+    "recovery": true,
+    "original_data_persisted": true,
+    "fresh_error_log_linked_trace": true,
+    "receipt": "run8-restart-kafka-fresh-receipts.json",
+    "issue_count": "16"
+  }
+]

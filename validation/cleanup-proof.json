@@ -1,0 +1,57 @@
+{
+  "at": "2026-10-01T23:55:31.708031+00:00",
+  "remaining": [],
+  "deleted": [
+    {
+      "name": "bounty-test-sentry-seed",
+      "id": "84b362ff-8c0b-4746-8810-359f5dcd7800",
+      "deletedAt": "2026-10-03T23:55:29.143Z"
+    },
+    {
+      "name": "bounty-test-sentry-3",
+      "id": "cc2e40ff-186e-4061-b1d5-f6d0576ca121",
+      "deletedAt": "2026-10-03T23:55:27.507Z"
+    },
+    {
+      "name": "bounty-test-sentry-3",
+      "id": "aebda832-b619-46fe-b55f-7ba6385349f7",
+      "deletedAt": "2026-10-03T23:03:40.762Z"
+    },
+    {
+      "name": "bounty-test-sentry-3",
+      "id": "53e7158a-eacd-4ba5-ab9f-4fdf02814631",
+      "deletedAt": "2026-10-03T22:58:28.119Z"
+    },
+    {
+      "name": "bounty-test-sentry-3",
+      "id": "745499a3-b540-4933-ae8a-8a8bc1fee755",
+      "deletedAt": "2026-10-03T22:40:07.084Z"
+    },
+    {
+      "name": "bounty-test-sentry-3",
+      "id": "70779411-4ca3-49d5-8895-34462a1b104d",
+      "deletedAt": "2026-10-03T21:54:59.193Z"
+    },
+    {
+      "name": "bounty-test-sentry-3",
+      "id": "099b357d-679c-4952-a469-82f4d0ad34e6",
+      "deletedAt": "2026-10-03T21:34:46.422Z"
+    },
+    {
+      "name": "bounty-test-sentry-3",
+      "id": "66382d91-2c6e-499d-b110-c84e50428417",
+      "deletedAt": "2026-10-03T21:20:07.560Z"
+    },
+    {
+      "name": "bounty-test-sentry-3",
+      "id": "43995ad1-1ee5-4d9c-9c95-7c9fc831fc2e",
+      "deletedAt": "2026-10-03T21:07:46.362Z"
+    },
+    {
+      "name": "bounty-test-sentry-seed",
+      "id": "791149a4-8112-4dd5-8286-80058b590e40",
+      "deletedAt": "2026-10-03T20:54:39.343Z"
+    }
+  ],
+  "pass": true
+}
